@@ -4,6 +4,10 @@ A basic calculator built using **HTML, CSS, and JavaScript**. It performs standa
 
 ---
 
+## 📸 Demo
+
+> (https://pikupika.github.io/Calculator/)
+
 ## 🚀 Features
 
 - Basic operations: `+`, `-`, `×` (multiply), `÷` (divide)
