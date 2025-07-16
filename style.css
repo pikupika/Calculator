@@ -1,5 +1,4 @@
 body {
-    font-family: Arial, sans-serif;
     background: linear-gradient(to bottom right, #ffe6f0, #e7f0ff);
     display: flex;
     justify-content: center;
@@ -33,13 +32,6 @@ body {
     background-color: #fcecef;
     border-radius: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.sticker {
-    width: 50px;
-    height: auto;
-    border-radius: 50%;
-    margin: 0 auto;
 }
 
 .button-row {
