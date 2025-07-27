@@ -12,7 +12,7 @@ A simple web-based Calculator built as part of [The Odin Project](https://www.th
 
 ## Screenshots
 
-![Calculator Screenshot](screenshots/calculator.png)
+![Calculator Screenshot](Screenshots/calculator.png)
 
 ## Getting Started
 
