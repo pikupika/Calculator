@@ -10,7 +10,9 @@ A simple web-based Calculator built as part of [The Odin Project](https://www.th
 - Clear and delete functions
 - Error handling (e.g., division by zero)
 
+## Screenshots
 
+![Calculator Screenshot](screenshots/calculator.png)
 
 ## Getting Started
 
