@@ -1,58 +1,60 @@
 # Calculator
 
-A basic calculator built using **HTML, CSS, and JavaScript**. It performs standard arithmetic operations with a clean user interface and validation logic.
+A simple web-based Calculator built as part of [The Odin Project](https://www.theodinproject.com/) curriculum. This project demonstrates fundamental JavaScript, HTML, and CSS skills by implementing a basic calculator that can perform standard arithmetic operations.
 
----
+## Features
 
-## 📸 Demo
+- Basic arithmetic operations: addition, subtraction, multiplication, division
+- Responsive and accessible UI
+- Keyboard and button support
+- Clear and delete functions
+- Error handling (e.g., division by zero)
 
-> (https://pikupika.github.io/Calculator/)
 
-## 🚀 Features
 
-- Basic operations: `+`, `-`, `×` (multiply), `÷` (divide)
-- Exponentiation using `**`
-- Modulus operator using `%`
-- Decimal support (e.g., `2.5 + 3.1`)
-- Clear button to reset the input (`C`)
-- Delete (backspace) button to remove last character (`⨉`)
-- Prevents:
-  - Multiple decimal points in a single number
-  - Empty screen (displays 0 by default)
-  - Invalid expressions on evaluation
+## Getting Started
 
----
+### Clone the repository
 
-## 🧠 Logic Explanation
+```bash
+git clone https://github.com/pikupika/Calculator.git
+cd Calculator
+```
 
-- The calculator stores input in a string called `expression`.
-- Each button click appends a value to `expression`.
-- The equal (`=`) button evaluates the full expression using:
-       **
-        new Function('return ' + expression)();
-      **
-  This is safer and more controlled than eval()
-- For decimal validation:
-      **
-        const segments = expression.split(/[\+\-\*\/\%\**]/);
-        const lastSegment = segments[segments.length - 1];
-        if (lastSegment.includes('.')) return;
-      **
-  This ensures only one dot per number.
-- Deleting the last character:
-      **
-        expression = expression.slice(0, -1);
-      **
-- If the screen is empty, it displays "0" using:
-      **
-        display.innerText = expression || '0';
-      **
+### Open in Browser
 
-## 📸 Sample Usage
-Try these in the calculator:
-2.5 + 3.5 → 6
-10 % 3 → 1
-2 ** 3 → 8
-7 * 4 + 2 → 30
-Press ⨉ to backspace
-Press C to clear all
+Just open the `index.html` file in your preferred web browser:
+
+```bash
+# On most systems:
+open index.html
+# Or manually double-click the file in your file explorer
+```
+
+## How to Use
+
+1. Enter numbers using the on-screen buttons or your keyboard.
+2. Select the desired operation (`+`, `-`, `×`, `÷`).
+3. Press `=` to see the result.
+4. Use `C` or `Clear` to reset, and `DEL` or `Backspace` to delete the last input.
+
+## Project Requirements
+
+This project fulfills the following [Odin Project calculator assignment](https://www.theodinproject.com/lessons/foundations-calculator) requirements:
+- Create functions for each arithmetic operation.
+- Build a simple UI using HTML and CSS.
+- Tie the UI to the logic with JavaScript.
+- Handle edge cases and errors gracefully.
+
+## Built With
+
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+
+## Contributing
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+
+> Project built as part of [The Odin Project](https://www.theodinproject.com/) curriculum.
